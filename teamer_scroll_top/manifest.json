@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name": "Scroll-to-top on teamer.ru",
+	"description": "Добавляет кнопку для пролистывания страницы вверх",
+	"version": "1.0",
+	"permissions": [
+		"http://www.teamer.ru/*"
+	],
+	"content_scripts": [
+		{
+			"matches": ["http://www.teamer.ru/*"],
+			"js": ["main.js"]
+		}
+	],
+	"browser_actions": {
+		"default_title": "Add Scroll-to-top",
+		"default_icon": "",
+		"deafult_popup": ""
+	}
+}
